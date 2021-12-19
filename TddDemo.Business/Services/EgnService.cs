@@ -12,7 +12,7 @@ namespace TddDemo.Business.Services
             _egnDal = egnDal;
             result = new Result(true,Messages.success);
         }
-        public IResult ResultsMessage()
+        public IResult ResultsMessage(EgnPartsEntity egn)
         {
            //string veriler= _egnDal.LengthIsValid(egn).Message;
             //if (!r) result= new Result(false, Messages.lengthMinMax);
