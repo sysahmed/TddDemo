@@ -13,13 +13,13 @@ namespace TddDemo.UI
 
         static void Main(string[] args)
         {
-            IResult result = NewMethod();
+            IResult result = ValidateEgn();
             Console.OutputEncoding = Encoding.UTF8;
             Console.WriteLine(result.Message);
             Console.ReadLine();
         }
 
-        private static IResult NewMethod()
+        private static IResult ValidateEgn()
         {
             Mock<IEgnDal> _mockEgnDal = new Mock<IEgnDal>(); ;
             EgnPartsEntity _dbEgns;
