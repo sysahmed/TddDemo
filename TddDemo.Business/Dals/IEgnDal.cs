@@ -4,6 +4,7 @@ using TddDemo.Entities;
 
 namespace TddDemo.Business
 {
+    //Data Access Layers
     public interface IEgnDal
     {
         IResult LengthIsValid(EgnPartsEntity egn);
